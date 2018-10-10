@@ -66,7 +66,7 @@
           skip_natural: true
           render: (user) ->
             template:
-              "<span>{{::user.created_at | date: 'dd/MM/yyyy'}}</span>"
+              "<span>{{::user.created_at | amDateFormat:'L'}}</span>"
             scope: {user: user}}]
       )
 
